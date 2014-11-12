@@ -1,0 +1,32 @@
+
+.tabs {
+	background-color: #fff;
+	border: none;
+	.tab-title {
+		> a {
+			font-family: 'Open Sans', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+			padding: 1rem;
+			background-color: #fff;
+			box-shadow: 0 1px 1px #FFF;
+			font-size: .9rem;
+			&:hover {
+				color: #fff;
+				background-color: #3074a7;
+			}
+		}
+		&.active {
+			> a {
+				color: #fff;
+				background-color: #3074a7;
+			}
+		}
+	}
+	&.justified {
+		.tab-title {
+			display: table-cell;
+			width: 1%;
+			float: none;
+			text-align: center;
+		}
+	}	
+}

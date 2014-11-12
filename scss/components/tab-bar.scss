@@ -1,0 +1,10 @@
+
+.tab-bar {
+    background: #a3d4a7;
+    h1, h2, h3, h4, h5, h6, a, span, .menu-icon {
+		color: #004579;
+    }
+    .menu-icon span::after {
+    	box-shadow: 0 0px 0 1px #004579, 0 7px 0 1px #004579, 0 14px 0 1px #004579;
+    }
+}

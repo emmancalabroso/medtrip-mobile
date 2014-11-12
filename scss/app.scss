@@ -1,0 +1,14 @@
+// Google Web font-style
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+
+// Foundation Files
+@import "vendor/normalize.scss";
+@import "vendor/foundation.scss";
+@import "vendor/font-awesome/font-awesome.scss";
+
+// Global
+@import "global/global.scss";
+
+// Components
+@import "components/components.scss";

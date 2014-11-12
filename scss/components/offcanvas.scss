@@ -1,0 +1,18 @@
+
+.left-off-canvas-menu {
+	background: #004579;
+}
+
+.move-right .exit-off-canvas {
+	box-shadow: none;
+}
+
+ul.off-canvas-list li a {
+	color: #ffffff;
+	border-bottom: none;
+	text-align: center;
+	padding: 1rem;
+	&:hover {
+		background: #002846;
+	}
+}

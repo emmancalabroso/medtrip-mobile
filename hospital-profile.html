@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>MEDTrip Mobile</title>
+
+        <link rel="stylesheet" type="text/css" href="css/app.css" media="screen" />
+        <script src="/js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        
+        <!-- OFF CANVAS SECTIONS WRAPPING THE MAIN CONTENT -->
+        <!-- <div class="off-canvas-wrap" data-offcanvas> -->
+            <div class="inner-wrap">
+         
+                <!-- OFF CANVAS MENU BAR -->
+                <nav class="tab-bar hide-for-large-up">
+         
+                    <section class="left-small">
+                        <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                    </section>
+         
+                    <section class="right tab-bar-section">
+                        <h1 class="title"><a href="index.html">MEDTrip</a></h1>
+                    </section>
+
+                    <section class="right-small">
+                        <a href="#" data-reveal-id="searchModal"><span class="fa fa-search fa-lg fa-fw"></span></a>
+                    </section>
+         
+                </nav> <!-- END NAV.TAB-BAR HIDE-FOR-LARGE-UP -->
+                
+                <!-- OFF CANVAS MENU -->
+                <aside class="left-off-canvas-menu">
+                    <ul class="off-canvas-list">
+                        <!-- <li><label>Navigation</label></li> -->
+                        <li>
+                            <a href="treatments.html">Treatments</a>
+                        </li>
+                        <li>
+                            <a href="destinations.html">Destinations</a>
+                        </li>
+                        <li>
+                            <a href="http://www.medtrip.com/news/">News</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Register</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Sign In</a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="off-canvas-list">
+                        <li class="has-dropdown"><a href="page.html">Page</a>
+                            <ul class="off-canvas-list">
+                                <li><a href="page.html">Full-width</a></li>
+                                <li><a href="sidebar-left.html">Left Sidebar</a></li>
+                                <li><a href="sidebar-right.html">Right Sidebar</a></li>
+                            </ul>
+                        </li>
+                    </ul> -->
+                </aside>
+                
+                <!-- SEARCH REVEAL -->
+                <div id="searchModal" class="reveal-modal" data-reveal>
+                    <form name="frontendSearch" method="post" action="/search-process2">
+                        <fieldset>
+                            <legend>Search your Clinic here</legend>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <select name="" id="">
+                                            <option value="0" disabled="true" selected="true">Specialization</option><option value="84">Alternative Medicine</option><option value="3">Cardiology</option><option value="59">Dentistry</option><option value="53">Dermatology</option><option value="5">Gastroenterology</option><option value="93">General Medicine</option><option value="42">General Surgery</option><option value="75">Internal Medicine</option><option value="50">Nephrology</option><option value="19">Neurology</option><option value="72">Obstetrics and Gynecology (OB/GYN)</option><option value="6">Oncology</option><option value="16">Ophthalmology</option><option value="89">Orthopedics</option><option value="67">Otolaryngology/E.N.T.</option><option value="68">Pediatrics</option><option value="24">Physical Therapy</option><option value="12">Plastic Surgery</option><option value="51">Pulmonology/Pneumology/Respirology</option><option value="61">Reproductive Endocrinology and Infertility</option><option value="41">Urology</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-11 small-offset-1 columns">
+                                        <select name="" id="" disabled="true">
+                                            <option value="0" disabled="true" selected="true">Sub-Specialization</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-10 small-offset-2 columns">
+                                        <select name="" id="" disabled="true">
+                                            <option value="0" disabled="true" selected="true">Treatment</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <select name="" id="">
+                                            <option value="0" disabled="true" selected="true">Country</option><option></option><option value="12">Argentina</option><option value="13">Australia</option><option value="15">Austria</option><option value="19">Bahrain</option><option value="23">Belgium</option><option value="34">Brazil</option><option value="37">Bulgaria</option><option value="48">Chile</option><option value="47">China</option><option value="53">Colombia</option><option value="56">Costa Rica</option><option value="110">Croatia</option><option value="61">Cyprus</option><option value="77">Czech Republic</option><option value="69">Egypt</option><option value="74">El Salvador</option><option value="86">France</option><option value="90">Georgia</option><option value="96">Germany</option><option value="100">Greece</option><option value="101">Guatemala</option><option value="106">Hong Kong</option><option value="111">Hungary</option><option value="115">India</option><option value="113">Indonesia</option><option value="70">Ireland</option><option value="119">Israel</option><option value="120">Italy</option><option value="135">Korea, South</option><option value="141">Lebanon</option><option value="171">Malaysia</option><option value="170">Mexico</option><option value="154">Moldova, Republic of</option><option value="159">Montenegro</option><option value="193">Pakistan</option><option value="195">Panama</option><option value="190">Peru</option><option value="206">Philippines</option><option value="194">Poland</option><option value="196">Portugal</option><option value="207">Puerto Rico</option><option value="205">Romania</option><option value="208">Russia</option><option value="202">Serbia</option><option value="220">Singapore</option><option value="214">South Africa</option><option value="222">Spain</option><option value="229">Switzerland</option><option value="243">Taiwan</option><option value="232">Thailand</option><option value="160">The Former Yugoslav Republic of Macedonia</option><option value="241">Turkey</option><option value="248">Ukraine</option><option value="3">United Arab Emirates</option><option value="247">United Kingdom</option><option value="249">United States of America</option><option value="251">Uruguay</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-11 small-offset-1 columns">
+                                        <select name="" id="" disabled="true">
+                                            <option value="0" disabled="true" selected="true">City</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <button name="searchSubmitButton" class="button radius expand">Let's Go</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <a class="close-reveal-modal">Close <i class="fa fa-times-circle-o fa-fw fa-lg"></i></a>
+                </div>
+
+                <!-- MAIN SECTION -->
+                <section class="main-section">
+                    <!-- CONTENT SECTION -->
+                    <section class="full-width heading-section">
+                        <div class="row">
+                            <div class="small-12 medium-12 large-12 columns">
+                                <h3>Hospital Israelita Albert Einstein (HIAE)</h3>
+                            </div> <!-- END 12 COLUMNS -->
+                        </div> <!-- END ROW -->
+                    </section> <!-- END SECTION.CONTENT-SECTION -->
+                 
+                    <!-- SERVICES SECTION -->
+                    <section class="full-width content-section">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <div class="hospital-cover">
+                                    <div class="row">
+                                        <div class="small-12 medium-2 columns">
+                                            <img src="http://placeimg.com/650/650/people" class="cover-img">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="small-12 columns">
+                                            <div class="button-bar">
+                                                <ul class="button-group even-4">
+                                                    <li><a class="tiny button" href="">Email</a></li>
+                                                    <li><a class="tiny button" href="">Call</a></li>
+                                                    <li><a class="tiny button" href="">Website</a></li>
+                                                    <li><a class="tiny button" href="">Map</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- END ROW -->
+                        
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <ul class="tabs justified" data-tab>
+                                    <li class="tab-title active"><a href="#overview">Overview</a></li>
+                                    <li class="tab-title"><a href="#clinics">Clinics</a></li>
+                                    <li class="tab-title"><a href="#services">Services</a></li>
+                                    <li class="tab-title"><a href="#awards">Awards</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabs-content">
+                            <div class="content active" id="overview">
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <p>Hospital Israelita Albert Einstein is one of the most respected hospitals in Latin America because of their belief that their job is not to treat disease but to care for people. This hospital is noted for its ability to perform highly complex procedures which apply it to meet all the demands of the value chain for the prevention, diagnosis, treatment and rehabilitation.</p>
+                                        <p>
+                                            Hospital Israelita Albert Einstein (HIAE) not only handles your health with respect and attention, it also offers outstanding quality in its customer service, technology, specialties and medical services.
+                                        </p>
+                                        <p>
+                                            The Hospital was the first institution outside the U.S. to be accredited by Joint Commission International in 1999, when the international program was launched. It was reaccredited in 2003 and again in 2006. This recognition is a seal of exceptionally high quality for the Hospital and for our Diagnostic & Preventive Medicine.
+                                        </p>
+                                        <p>
+                                            In June 2007, HIAE became Latin America’s first healthcare institution and one of only three worldwide, to have a Stroke Care Center certified by Joint Commission International (JCI). Its interdisciplinary staff are highly trained and equipped with cutting edge technology to treat patients who suffer cerebrovascular accidents (CVA). This infrastructure and continuous improvement of processes are distinctive features that make HIAE a reference in stroke care.
+                                        </p>
+                                        <p>
+                                            Sociedade Beneficente Israelita Brasileira Albert Einstein (SBIBAE) carries out several initiatives with the intention of stimulating and promoting constant professional development, improving the alliance with its staff and cultivating a work atmosphere where people are satisfied and motivated.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content" id="clinics">
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="hospital-cover-none">
+                                            <div class="row cover-info-stats">
+                                                <div class="small-12 columns cover-info">
+                                                    <h6><a href="clinic-profile.html">Integrated Cardiology Program</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- END ROW -->
+
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="hospital-cover-none">
+                                            <div class="row cover-info-stats">
+                                                <div class="small-12 columns cover-info">
+                                                    <h6><a href="#">Integrated Neurology Program</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- END ROW -->
+
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="hospital-cover-none">
+                                            <div class="row cover-info-stats">
+                                                <div class="small-12 columns cover-info">
+                                                    <h6><a href="#">Integrated Oncology Program</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- END ROW -->
+
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="hospital-cover-none">
+                                            <div class="row cover-info-stats">
+                                                <div class="small-12 columns cover-info">
+                                                    <h6><a href="#">Integrated Orthopedics and Rheumatology Program</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- END ROW -->
+
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="hospital-cover-none">
+                                            <div class="row cover-info-stats">
+                                                <div class="small-12 columns cover-info">
+                                                    <h6><a href="#">Plastic Surgery</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- END ROW -->
+
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="hospital-cover-none">
+                                            <div class="row cover-info-stats">
+                                                <div class="small-12 columns cover-info">
+                                                    <h6><a href="#">Opthalmology</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- END ROW -->
+
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="hospital-cover-none">
+                                            <div class="row cover-info-stats">
+                                                <div class="small-12 columns cover-info">
+                                                    <h6><a href="#">Integrated Transplant Program</a></h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- END ROW -->
+                            </div>
+                            <div class="content" id="services">
+                                <div class="row">
+                                    <div class="small-11 small-offset-1 columns">
+                                        <ul>
+                                            <li>Blood Banking and Donation</li>
+                                            <li>Home Care Services</li>
+                                            <li>International Patient Center</li>
+                                            <li>Billing and Insurance Assistance</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content" id="awards">
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="img-text">
+                                            <div class="img-text-icon left">
+                                                <i class="fa fa-image"></i>
+                                            </div>
+                                            <div class="img-text-overflow-hidden">
+                                                <h6 class="img-text-title">ISO 14000 - Environmental Management Systems</h6>
+                                                <small>Certificate</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="img-text">
+                                            <div class="img-text-icon left">
+                                                <i class="fa fa-image"></i>
+                                            </div>
+                                            <div class="img-text-overflow-hidden">
+                                                <h6 class="img-text-title">ISO 9001 - Quality Management Systems</h6>
+                                                <small>Certificate</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="img-text">
+                                            <div class="img-text-icon left">
+                                                <i class="fa fa-image"></i>
+                                            </div>
+                                            <div class="img-text-overflow-hidden">
+                                                <h6 class="img-text-title">ISO 9001:2000 - Quality Management Systems</h6>
+                                                <small>Certificate</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="img-text">
+                                            <div class="img-text-icon left">
+                                                <i class="fa fa-image"></i>
+                                            </div>
+                                            <div class="img-text-overflow-hidden">
+                                                <h6 class="img-text-title">American Association of Blood Banks (AABB) Certification</h6>
+                                                <small>Certificate</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <div class="img-text">
+                                            <div class="img-text-icon left">
+                                                <i class="fa fa-image"></i>
+                                            </div>
+                                            <div class="img-text-overflow-hidden">
+                                                <h6 class="img-text-title">GS1 Automation in Health Care Award</h6>
+                                                <small>Award</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section> <!-- END SECTION.FULL-WIDTH.SERVICES-SECTION -->
+
+                    <!-- COPYRIGHT SECTION -->
+                    <section class="full-width copyright-section">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <p class="text-center">&copy; 2014 Chromedia Inc. All Rights Reserved.</p>
+                            </div> <!-- END 12 COLUMNS -->
+                        </div> <!-- END ROW -->
+                    </section> <!-- END SECTION.FULL-WIDTH COPYRIGHT-SECTION -->
+
+                </section> <!-- END SECTION.MAIN-SECTION -->
+
+                <!-- CLOSE THE OFF-CANVAS MENU -->
+                <a class="exit-off-canvas"></a>
+             
+            </div>
+        <!-- </div>  -->
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="/js/vendor/fastclick.js"></script>
+        <script type="text/javascript" src="js/vendor/foundation/foundation.js"></script>
+        <script type="text/javascript" src="js/vendor/foundation/foundation.offcanvas.js"></script>
+        <script type="text/javascript" src="js/vendor/foundation/foundation.equalizer.js"></script>
+        <script type="text/javascript" src="js/vendor/foundation/foundation.reveal.js"></script>
+        <script type="text/javascript" src="js/vendor/foundation/foundation.tab.js"></script>
+        <script type="text/javascript" src="js/vendor/foundation/foundation.tooltip.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+    </body>
+</html>
